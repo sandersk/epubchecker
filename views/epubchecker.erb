@@ -1,0 +1,15 @@
+<h1>Epubchecker</h1>
+
+<form method="post" enctype="multipart/form-data" action="validate_epub">
+<div class="file_select">
+<p><label for="mml_upload">Select an .epub file here</label></p>
+<p><input type="file" id="epub_upload" name="epub_upload" value="Upload File!"></p>
+<p><input type="submit" name="epub_submit_btn" value="Upload!"/></p>
+</form>
+
+<h2>Validation Results</h2>
+
+<p>EPUB validation <%= @epubcheck_success? "succeeded" : "failed" %>
+
+<p><%= @epubcheck_log_output %></p>
+</div>
