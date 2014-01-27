@@ -4,7 +4,6 @@ require 'bundler'
 Bundler.require
 
 set :root, File.dirname(__FILE__)
-set :bind, '0.0.0.0'
 
 get '/' do
   erb :epubchecker
