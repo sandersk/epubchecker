@@ -35,7 +35,9 @@ Vagrant.configure("2") do |config|
             ],
 	    :gems => {
 	      "1.9.3-p484" => [
-	      {:name => "bundler"}
+	      {:name => "bundler",
+	       :name => "shotgun"
+	      }
 	      ]
 	    },
             :global => "1.9.3-p484"
