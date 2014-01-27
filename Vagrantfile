@@ -21,6 +21,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe 'git'
     chef.add_recipe 'ruby_build'
     chef.add_recipe 'rbenv::user'
+    chef.add_recipe 'java'
     chef.json = {
       :git   => {
         :prefix => "/usr/local"
